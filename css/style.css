@@ -3,26 +3,22 @@ body
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
 }
-
-/* Start Nav */ 
+/* Start Nav */
 .navbar
 {
     border:none;
     margin-bottom:0;
     background: #000;
-    
     opacity: .7;
 }
-
 .navbar-brand
 {
     font-size:20px;
     text-transform: uppercase;
 }
-
 .navbar ul a
 {
-   font-size: 15px;
+    font-size: 15px;
 }
 .navbar-default .navbar-nav>li>a
 {
@@ -40,23 +36,24 @@ body
     font-weight: bold;
     font-size: 30px
 }
-
 .navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:hover
 {
     border-bottom: 3px solid#ca29a7;
     color:#ffffff
 }
-
-/* End Nav */ 
-
+.slide{
+    height: 100vh
+}
+.slide .item img{
+    height: 100vh
+}
+/* End Nav */
 /*Start About*/
-
 section.about
 {
     width: 100%;
     padding:50px 0;
 }
-
 section.about div.narrow h1 , section.product h1
 {
     font-size:2.5em;
@@ -64,14 +61,12 @@ section.about div.narrow h1 , section.product h1
     font-weight: bold;
     margin-bottom: 5%;
 }
-
 section.about div.narrow p, section.product p
 {
     line-height: 1.7;
     margin-bottom: 10%;
     color:#999
 }
-
 section.about img
 {
     width: 100%;
@@ -80,14 +75,19 @@ section.about img
     box-shadow: 1px 1px 4px #888;
     border-radius: 1em
 }
-
-.p-away 
+.p-away
 {
     font-size: 20px;
-    margin-bottom: 12%;
     color:#999
 }
-
+section.about .about-box{
+    margin-bottom: 20px
+}
+@media(max-width: 992px){
+    section.about .about-box{
+        clear: both;
+    }
+}
 section.about div.img
 {
     -moz-background-image: url('../img/work-1.jpg');
@@ -108,12 +108,12 @@ section.about .p
     font-size: 20px;
     margin-bottom:5%;
     width: 95%
-    
+
 }
 /*End About*/
 
 /*Start service*/
-section.service 
+section.service
 {
     background-image: url('../img/intro.jpg');
     background-attachment: fixed;
@@ -138,7 +138,7 @@ section.service  p
 /*End service*/
 
 /* Start product */
-section.product 
+section.product
 {
    background: #fbfbfb;
     padding: 5%
@@ -153,7 +153,7 @@ section.product img
 }
 /* End product */
 
-/* Start Choose */ 
+/* Start Choose */
 
 section.choose
 {
@@ -174,14 +174,14 @@ section.choose .part h5
     text-transform: uppercase;
     font-weight: bold;
     font-size:15px;
-    margin: 30px 0  
+    margin: 30px 0
 }
 section.choose .part p
 {
      line-height: 1.7;
      color:#666;
 }
-/* End Choose */ 
+/* End Choose */
 
 /* Start Footer */
 
@@ -197,7 +197,7 @@ footer p
     color: #888
 }
 
-footer i 
+footer i
 {
     padding:1%;
     background: #888;
